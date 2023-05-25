@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .wrapper {
   width: 1110px;
   margin: 0 auto;
@@ -16,20 +21,40 @@ body {
 .wysiwyg-wrapper h1 {
   font-weight: 500;
   font-size: 48px;
+  margin-bottom: 32px;
 }
 
 .wysiwyg-wrapper h2 {
   font-weight: 500;
   font-size: 40px;
   color: #9f7303;
-}
-
-.slogan {
-  color: #9f7303;
+  margin-bottom: 56px;
 }
 
 .wysiwyg-wrapper h3 {
   color: #9f7303;
+  margin-top: 88px;
+  margin-bottom: 34px;
+}
+
+.gold {
+  color: #9f7303;
+  margin-top: 56px;
+  margin-bottom: 18px;
+}
+
+.wysiwyg-wrapper ul {
+  margin-top: 32px;
+  margin-bottom: 56px;
+  list-style-image: url(img/Rectangle\ 3.svg);
+}
+
+.wysiwyg-wrapper li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.wysiwyg-wrapper div {
+  margin-bottom: 83px;
 }
 
 .wysiwyg-wrapper cite {
