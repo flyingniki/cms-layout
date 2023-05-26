@@ -74,8 +74,8 @@ body {
   font-style: italic;
   font-weight: 300;
   font-size: 24px;
-  border-top: 1px solid;
-  border-bottom: 1px solid;
+  border-top: 1px solid #f5d581;
+  border-bottom: 1px solid #f5d581;
   box-sizing: border-box;
   width: 920px;
   margin: 40px auto 0;
@@ -86,6 +86,104 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
+}
+
+/* form-section */
+
+.review-form {
+  padding: 81px 0 56px;
+  border-bottom: 1px solid #f5d581;
+}
+
+.review-form__title {
+  font-size: 32px;
+  font-weight: 500;
+  color: #9f7303;
+  margin-bottom: 32px;
+}
+
+.form-section .wrapper {
+  background-color: #f4efe2;
+}
+
+.review-form .wpcf7-text,
+.review-form .wpcf7-textarea {
+  background-color: #ffffff;
+  border: 1px solid #f5d581;
+  border-radius: 8px;
+  padding: 16px;
+  width: 540px;
+  height: 64px;
+  font-size: 18px;
+  line-height: 26px;
+  box-sizing: border-box;
+  margin-bottom: 24px;
+}
+
+.review-form .wpcf7-textarea {
+  width: 100%;
+  height: 160px;
+  resize: none;
+  overflow: hidden;
+}
+
+.review-form .wpcf7-text::-webkit-input-placeholder,
+.review-form .wpcf7-textarea::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #000000;
+  opacity: 0.3;
+}
+
+.review-form .wpcf7-text::-moz-placeholder,
+.review-form .wpcf7-textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #000000;
+  opacity: 0.3;
+}
+
+.review-form .wpcf7-text:-ms-input-placeholder,
+.review-form .wpcf7-textarea:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #000000;
+  opacity: 0.3;
+}
+
+.review-form .wpcf7-text:-moz-placeholder,
+.review-form .wpcf7-textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: #000000;
+  opacity: 0.3;
+}
+
+.review-form .wpcf7-text:focus,
+.review-form .wpcf7-textarea:focus {
+  outline: none;
+  border: 1px solid #9f7303;
+}
+
+.review-form .wpcf7-submit {
+  border: 0;
+  padding: 19px 21px;
+  width: 285px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  cursor: pointer;
+  background: #9f7303;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.review-form__sumbit-outer {
+  display: flex;
+  align-items: center;
+}
+
+.review-form__text {
+  width: 225px;
+  margin-left: 16px;
+  font-size: 12px;
+  opacity: 0.7;
 }
 
 /* reviews-section */
