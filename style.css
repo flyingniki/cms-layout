@@ -19,6 +19,101 @@ body {
   padding: 0 165px;
 }
 
+/* header */
+
+.page-header .wrapper {
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 18px;
+}
+
+.page-header__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.page-header__menu-wrapper {
+  margin-left: auto;
+}
+
+.menu-primary-container .menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+}
+
+.menu-primary-container .current-menu-item a {
+  color: #9f7303;
+}
+
+.menu-primary-container li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.menu-primary-container a {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.menu-primary-container .custom-class a {
+  border: 1px solid #9f7303;
+  border-radius: 8px;
+  padding: 6px 22px;
+}
+
+.menu-primary-container .custom-class a:hover {
+  color: #000000;
+  background-color: #fffdf8;
+}
+
+.menu-primary-container .custom-class a:active {
+  background-color: #fff7e3;
+}
+
+.menu-primary-container .menu-item-has-children {
+  position: relative;
+  background-image: url("img/icon-sub-menu.svg");
+  background-position: 100% center;
+  background-size: 13px 9px;
+  background-repeat: no-repeat;
+}
+
+.menu-primary-container .menu-item-has-children a {
+  padding-right: 17px;
+}
+
+.menu-primary-container .menu-item-has-children:hover .sub-menu {
+  display: block;
+}
+
+.menu-primary-container .sub-menu {
+  display: none;
+  position: absolute;
+  top: 31px;
+  padding: 24px 16px 32px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(97, 97, 97, 0.18),
+    0px 4px 8px rgba(97, 97, 97, 0.18);
+  min-width: 200px;
+}
+
+.menu-primary-container .sub-menu li {
+  margin-bottom: 24px;
+  list-style: none;
+}
+
+.menu-primary-container .sub-menu a {
+  color: #000000;
+}
+
+.menu-primary-container a:hover {
+  color: #9f7303;
+}
+
 /* main-section */
 
 .main-section .wrapper {
@@ -172,6 +267,14 @@ body {
   background: #9f7303;
   border-radius: 8px;
   color: #ffffff;
+}
+
+.review-form .wpcf7-submit:hover {
+  background-color: #856103;
+}
+
+.review-form .wpcf7-submit:active {
+  background-color: #684c05;
 }
 
 .review-form__sumbit-outer {
